@@ -18,7 +18,7 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
+      <h3>${product.title.slice(0, 15)}</h3>
       <p>Category: ${product.category}</p>
       <p class = "text-success"> Rating & Total Review <br><span class = "fw-bold"><i class="fas fa-star text-warning"></i> ${product.rating.rate}</span> <br> <i class="fas fa-user text-success"></i> ${product.rating.count}</p>
       <h2 class = "text-danger">Price:$ ${product.price}</h2>
