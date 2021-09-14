@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    background-image: url("gradient-3-a.png");
 }
 
 .search-field {
@@ -8,6 +9,10 @@ body {
     border-radius: 50px;
     padding: 5px;
     outline: none;
+}
+
+.bg-content {
+    background-image: url('gradient-2.png');
 }
 
 .search-field:hover {
@@ -36,23 +41,33 @@ body {
     grid-gap: 5px;
     /* border: 1px solid black; */
     text-align: center;
-    width: 100%;
     margin: auto;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 100%;
 }
 
 .single-product {
     padding: 10px;
     transition: 0.6s;
-    background-color: rgb(245, 245, 245);
     border-radius: 15px;
+    background: transparent;
+    border: 1px solid #FFF;
+    box-shadow: 4px 4px 7px gray;
 }
 
 .single-product:hover {
     box-shadow: 4px 4px 7px gray;
     border-radius: 10px;
-    background-color: rgb(224, 226, 250);
+    background-color: rgb(255, 255, 255);
+}
+
+.single-product img:hover {
+    z-index: 5;
 }
 
 .product-image {
@@ -63,7 +78,7 @@ body {
 .cart {
     width: 350px;
     padding: 10px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: 10px 10px 20px rgb(187, 132, 132);
     border-radius: 7px;
     margin-right: 30px;
     background-color: #f8f9fa;
